@@ -86,19 +86,25 @@ button, p, span, h1, h2, h3, h4, h5, ul, li, div, a {
     width: 100%;
 }
 
-/* SECTION ACTICITÉES */
+.bottom {
+    margin-bottom: 35px;
+}
+
+/* SECTION ACTIVITÉES */
 
 .activities_wrapper {
     flex-direction: column;
+    gap: 30px;
+    padding: 30px;
 }
 
 .cards_wrapper {
     gap: 30px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .card {
-    width: 22%;
+    width: 24%;
 }
 
 .card_picture {
@@ -134,7 +140,17 @@ button, p, span, h1, h2, h3, h4, h5, ul, li, div, a {
 /*** ** * MEDIA QUERIES * ** ***/
 
 @media screen and (max-width: 1024px) {
-    
+
+/* SECTION ACTIVITÉES */
+
+.card_picture {
+    height: 200px;
+}
+
+.card_title {
+    height: 30px;
+}
+
 /* FOOTER */
     
 .lists_container {
@@ -144,6 +160,25 @@ button, p, span, h1, h2, h3, h4, h5, ul, li, div, a {
 }
 
 @media screen and (max-width: 650px) {
+
+body {
+    padding: 0;
+}
+
+/* SECTION ACTIVITÉES */
+
+.cards_wrapper {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    width: 100%;
+}
+
+.card_picture {
+    height: 141px;
+}
     
 /* FOOTER */
 
@@ -159,5 +194,5 @@ button, p, span, h1, h2, h3, h4, h5, ul, li, div, a {
 .list_wrapper {
     width: 70%;
 }
-    
+
 }
