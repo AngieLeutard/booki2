@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "raleway";
+    src: url("./assets/font/Raleway-VariableFont_wght.woff2") format('woff2'),
+         url("./assets/font/Raleway-VariableFont_wght.woff") format('woff');
+    font-weight: 100 900;
+}
+
+:root {
+    /* Font */
+    --font-raleway: "raleway";
+    --font: var(--font-raleway);
+
+    /* Colors */
+    --black: #000000;
+    --light-blue:#DEEBFF;
+    --blue: #0065FC;
+    --grey: #D9D9D9;
+    --dark-grey: #F2F2F2;
+
+    /* General var-colors */
+    --text-color: var(--black);
+}
+
+/* General Text */
+
+.text {
+    font-family: var(--font);
+    color: var(--black);
+}
+
+.text_title {
+    font-weight: 700;
+}
+
+.text_section {
+    font-size: 22px;
+}
+
+.text_card {
+    font-size: 16px;
+}
+
+.text_info {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.text_header {
+    color: var(--blue);
+}
