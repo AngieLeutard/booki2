@@ -86,6 +86,33 @@ button, p, span, h1, h2, h3, h4, h5, ul, li, div, a {
     width: 100%;
 }
 
+/* SECTION ACTICITÉES */
+
+.activities_wrapper {
+    flex-direction: column;
+}
+
+.cards_wrapper {
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    width: 22%;
+}
+
+.card_picture {
+    border-radius: 20px 20px 0 0;
+    height: 380px;
+    object-fit: cover;
+}
+
+.card_title {
+    padding: 20px 19px 20px 19px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
 /* FOOTER */
 
 .footer_wrapper {
