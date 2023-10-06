@@ -15,13 +15,39 @@
     --light-blue:#DEEBFF;
     --blue: #0065FC;
     --grey: #D9D9D9;
-    --dark-grey: #F2F2F2;
+    --light-grey: #F2F2F2;
 
     /* General var-colors */
     --text-color: var(--black);
 }
 
-/* General Text */
+
+/*** ** * Reset * ** ***/
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+button, p, span, h1, h2, h3, h4, h5, ul, li, div, a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+    background: none;
+    text-decoration: none;
+}
+
+
+/*** ** * GENERAL TEXT * ** ***/
 
 .text {
     font-family: var(--font);
@@ -47,4 +73,64 @@
 
 .text_header {
     color: var(--blue);
+}
+
+
+/*** ** * GENERAL CSS * ** ***/
+
+.wrapper {
+    display: flex;
+}
+
+.width {
+    width: 100%;
+}
+
+/* FOOTER */
+
+.footer_wrapper {
+    background-color: var(--light-grey);
+    padding: 20px;
+}
+
+.lists_container {
+    flex-direction: row;
+    gap: 20px;
+}
+
+.list_wrapper {
+    flex-direction: column;
+    width: 30%;
+    gap: 15px;
+}
+
+/*** ** * MEDIA QUERIES * ** ***/
+
+@media screen and (max-width: 1024px) {
+    
+/* FOOTER */
+    
+.lists_container {
+    gap: 30px;
+}
+        
+}
+
+@media screen and (max-width: 650px) {
+    
+/* FOOTER */
+
+.footer_wrapper {
+    padding: 30px;
+}
+
+.lists_container {
+    flex-direction: column;
+    gap: 50px;
+}
+
+.list_wrapper {
+    width: 70%;
+}
+    
 }
