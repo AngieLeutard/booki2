@@ -11,15 +11,69 @@
     </head>
     <body>
         <!-- *** ** * HEADER * ** *** -->
-        <header class="header_wrapper display">
-
+        <header class="header_wrapper display text text_header bottom">
+            <a href="#" class="header_logoContainer">
+                <img class="header_logo" src="./assets/images/Booki.png" alt="logo Booki">
+            </a>
+            <nav class="header_nav">
+                <a href="#ancre_hebergements" class="header_navLink">Hébergements</a>
+                <a href="#ancre_activites" class="header_navLink">Activités</a>
+            </nav>
         </header>
         <!-- *** ** * SEARCH * ** *** -->
         <section class="search_wrapper display bottom">
-
+            <form class="form_container display width">
+                <div class="form_text display text">
+                    <h1 class="text_title text_section">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p class="text_header">En plein centre-ville ou en pleine nature</p>
+                </div>
+                <div class="form_searchBar display">
+                    <div class="form__searchBar__fa"><i class="fa-solid fa-location-dot"></i></div>
+                    <input class="form_input text text_title" type="text" name="destination" placeholder="Marseille, France">
+                    <button class="form_searchButton text text_title" type="button">Rechercher</button>
+                    <button class="form__searchButtonMobile"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="form_filterWrapper display">
+                    <ul class="form_filter display">
+                        <li class="form__filterText">
+                        <p class="text_filter text">Filtres</p>
+                        </li>  
+                    </ul>
+                    <ul class="form_filter display">
+                        <li class="form_buttonContainer">
+                            <button class="form_button display" type="button">
+                                <i class="fa-solid fa-money-bill-wave fa_filter"></i>
+                                <span class="text_filter text">Économiques</span> 
+                            </button>
+                        </li>
+                        <li class="form_buttonContainer">
+                            <button class="form_button display" type="button">
+                                <i class="fa-solid fa-person fa_filter"></i>
+                                <span class="text_filter text">Familial</span> 
+                            </button>
+                        </li>
+                        <li class="form_buttonContainer">
+                            <button class="form_button display" type="button">
+                                <i class="fa-solid fa-heart fa_filter"></i>
+                                <span class="text_filter text">Romantique</span> 
+                            </button>
+                        </li>
+                        <li class="form_buttonContainer">
+                            <button class="form_button display" type="button">
+                                <i class="fa-solid fa-dog fa_filter"></i>
+                                <span class="text_filter text">Animaux autorisés</span> 
+                            </button>
+                        </li>   
+                    </ul>
+                </div>
+                <div class="form_infoText display text text_header">
+                    <div class="fa_infoContainer display"><i class="fa-solid fa-info"></i></div>
+                    <p>Plus de 500 logemments sont disponibles dans cette ville</p>
+                </div>  
+            </form>
         </section>
         <!-- *** ** * HEBERGEMENTS * ** *** -->
-        <div class="annonces_container display">
+        <div class="annonces_container display width">
             <!-- *** ** * MAIN * ** *** -->
             <main class="main_wrapper display bottom">
                 <h2 class="width text text_title text_section">Hébergements à Marseille</h2>
@@ -129,10 +183,12 @@
                 <div class="aside_cardsWrapper display width">
                     <a href="#" class="width">
                         <article class="aside_card display">
-                            <img class="aside_cardPicture width" src="./assets/images/activities/vieux-port.jpg" alt="vieux-port de Marseille">
-                            <div class="aside_cardDescription display">
-                                <h3 class="aside_cardTitle text text_title text_card">Auberge de la Canebière</h3>
-                                <p class="text text_info aside_cardText">Nuit à partir de 25€</p>
+                            <img class="aside_cardPicture" src="./assets/images/activities/vieux-port.jpg" alt="vieux-port de Marseille">
+                            <div class="display aside_cardDescription_wrapper">
+                                <div class="aside_cardDescription display">
+                                    <h3 class="aside_cardTitle text text_title text_card">Auberge de la Canebière</h3>
+                                    <p class="text text_info aside_cardText">Nuit à partir de 25€</p>
+                                </div>
                                 <div class="aside_starsWrapper display">
                                     <i class="fa-solid fa-star blueStar asideStar"></i>
                                     <i class="fa-solid fa-star blueStar asideStar"></i>
@@ -145,10 +201,12 @@
                     </a>
                     <a href="#" class="width">
                         <article class="aside_card display">
-                            <img class="aside_cardPicture width" src="./assets/images/activities/vieux-port.jpg" alt="vieux-port de Marseille">
-                            <div class="aside_cardDescription display">
-                                <h3 class="aside_cardTitle text text_title text_card">Chambres d’hôtes Au cœur de l’eau</h3>
-                                <p class="text text_info aside_cardText">Nuit à partir de 71€</p>
+                            <img class="aside_cardPicture" src="./assets/images/activities/vieux-port.jpg" alt="vieux-port de Marseille">
+                            <div class="display aside_cardDescription_wrapper">
+                                <div class="aside_cardDescription display">
+                                    <h3 class="aside_cardTitle text text_title text_card">Chambres d’hôtes Au cœur de l’eau</h3>
+                                    <p class="text text_info aside_cardText">Nuit à partir de 71€</p>
+                                </div>
                                 <div class="aside_starsWrapper display">
                                     <i class="fa-solid fa-star blueStar asideStar"></i>
                                     <i class="fa-solid fa-star blueStar asideStar"></i>
@@ -161,10 +219,12 @@
                     </a>
                     <a href="#" class="width">
                         <article class="aside_card display">
-                            <img class="aside_cardPicture width" src="./assets/images/activities/vieux-port.jpg" alt="vieux-port de Marseille">
-                            <div class="aside_cardDescription display">
-                                <h3 class="aside_cardTitle text text_title text_card">Hôtel Bleu et Blanc</h3>
-                                <p class="text text_info aside_cardText">Nuit à partir de 68€</p>
+                            <img class="aside_cardPicture" src="./assets/images/activities/vieux-port.jpg" alt="vieux-port de Marseille">
+                            <div class="display aside_cardDescription_wrapper">
+                                <div class="aside_cardDescription display">
+                                    <h3 class="aside_cardTitle text text_title text_card">Hôtel Bleu et Blanc</h3>
+                                    <p class="text text_info aside_cardText">Nuit à partir de 68€</p>
+                                </div>
                                 <div class="aside_starsWrapper display">
                                     <i class="fa-solid fa-star blueStar asideStar"></i>
                                     <i class="fa-solid fa-star blueStar asideStar"></i>
