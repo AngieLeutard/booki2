@@ -87,6 +87,11 @@ button {
     font-size: 17px;
 }
 
+.text_filterTitle {
+    font-weight: 700;
+    font-size: 17px;
+}
+
 
 /*** ** * GENERAL CSS * ** ***/
 
@@ -504,9 +509,19 @@ body {
     border-bottom: var(--light-grey) solid 2px;
     padding-bottom: 15px;
     width: 100%;
+    justify-content: center;
 }
 
 /* SEARCH */
+
+.form_searchBar {
+    position: relative;
+}
+
+.form_searchButtonMobile {
+    position: absolute;
+    left: 250px;
+}
 
 .form_searchButton {
     display: none;
@@ -534,6 +549,22 @@ body {
 
 .form_filter {
     flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form_button {
+    padding: 0;
+    width: 100%;
+    padding-left: 19px;
+   
+}
+
+.form_buttonContainer {
+    width: 48%;
+}
+
+.text_filter {
+    font-size: 13px;
 }
 
 /* MAIN */
@@ -545,6 +576,7 @@ body {
 
 .main_wrapper {
     background-color: var(--white);
+    padding: 30px 20px 30px 20px;
 }
 
 .main_cardsWrapper {
@@ -556,12 +588,22 @@ body {
     width: auto;
 }
 
+/* ASIDE */
+
+.aside_wrapper {
+    padding: 30px 20px 30px 20px;
+}
+
 .aside_cardsWrapper {
     flex-direction: column;
     gap: 15px;
 }
 
 /* SECTION ACTIVITÉES */
+
+.activities_wrapper {
+    padding: 30px 20px 30px 20px;
+}
 
 .cards_wrapper {
     flex-direction: column;
