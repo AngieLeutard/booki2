@@ -316,6 +316,7 @@ input::placeholder {
     height: 124px;
     border-radius: 20px 20px 0px 0px;
     border: var(--white) solid 5px;
+    object-fit: cover;
 }
 
 .main_cardText {
@@ -365,6 +366,7 @@ input::placeholder {
     height: 144px;
     border-radius: 20px 0px 0px 20px;
     border: var(--white) solid 5px;
+    object-fit: cover;
 }
 
 .aside_cardDescription_wrapper {
