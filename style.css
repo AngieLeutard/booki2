@@ -533,7 +533,6 @@ body {
 .form_searchIcon {
     display: flex;
     background-color: var(--blue);
-    right: 3Opx;
 }
 
 .fa-magnifying-glass {
@@ -634,5 +633,4 @@ body {
 .list_wrapper {
     width: 70%;
 }
-
 }
