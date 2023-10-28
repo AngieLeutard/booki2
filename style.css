@@ -413,6 +413,7 @@ input::placeholder {
 }
 
 .card {
+    cursor: pointer;
     flex-direction: column;
     width: 24%;
 }
